@@ -1,4 +1,4 @@
-require "scooter/sass/version"
+require "scooter-sass/version"
 
 module Scooter
   module Sass
