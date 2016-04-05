@@ -3,7 +3,7 @@ module Scooter
     class Engine < ::Rails::Engine
       initializer 'scooter-sass.assets.precompile' do |app|
         %w(stylesheets).each do |sub|
-          app.config.assets.path << root.join('app/assets', sub).to_s
+          app.config.assets.paths << root.join('app/assets', sub).to_s
         end
       end
     end
